@@ -1,0 +1,9 @@
+! model
+  choc84        Noppoo Choc-84 / N-Key-USB
+
+! layout
+  fnkeyqwertysteno      Qwertysteno on Fn and number keys
+
+! variant
+  fnkeyqwertysteno      fnkeyqwertysteno: Function Key qwerty steno
+

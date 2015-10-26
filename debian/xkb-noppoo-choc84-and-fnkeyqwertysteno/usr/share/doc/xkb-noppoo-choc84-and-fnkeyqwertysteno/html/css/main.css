@@ -1,0 +1,291 @@
+/* css skeleton
+  /* Position - put things that affect things outside the box
+  display: block;
+
+  /* Box - put styles that affect the box
+  width: 100%;
+  height: 100%;
+
+  padding: 0px;
+  border: 0px;
+  margin: 0px;
+
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+
+  /* Colors - put the colors for the content of the box
+  color: #000000; #3D6961;
+  background-color: #FFFEFD; #F6A354;   /* Orange */
+
+  /* Text - put styles that affect the content text
+  font-family: "MuseoSlab500", arial, sans-serif;
+  font-size: 1em;
+  text-align: center;
+*/
+
+/*** STRUCTURE ***/
+
+html {
+    height: 100%; /* fixes background not showing */
+    background-color: #3D6961; /* Dark Green */
+}
+
+body {
+    margin: 0 auto;
+
+    /* Colors */
+    background-color: #3D6961; /* Dark Green */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8076bbb6', endColorstr='#749490', GradientType=1);
+
+    /* Text */
+    font-family: "MuseoSlab500", arial, sans-serif;
+    color: #FFFEFD;
+}
+
+
+.static_header {
+    border-bottom: #FFFEFD solid 6px;
+    background-color: #749490; /* Green */
+    height: 100px;
+}
+
+#welcome-banner {
+    display: block;
+    text-align: center;
+    padding: 60px;
+
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5); /* letterpress effect */
+}
+
+header > img {
+    margin: 10px;
+}
+
+main {
+    /* Box */
+    background-color: #3D6961; /* Dark Green */
+    padding: 30px;
+    display: block;
+}
+
+footer {
+    text-align: center;
+    text-decoration: none;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+figure {
+    display: inline-block;
+}
+
+.two-column {
+    /*column-count: 2;
+    -moz-column-count: 2;
+    -webkit-column-count: 2;*/
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.home_link_img {
+    float: left;
+}
+
+.logout_link {
+    float: right;
+}
+
+.float_left {
+    float: left;
+}
+
+.float_right {
+    float: right;
+}
+
+/*** TEXT STYLES ***/
+
+#welcome-text {
+    /* Colors */
+    color: #FFB56F; /* Orange */
+
+    /* Text */
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5), -1px -1px 1px rgba(255, 255, 255, 0.5); /* emboss effect */
+}
+
+#title-text, h1 {
+    /* Colors */
+    color: #FFFEFD; /* white */
+
+    /* Text */
+    font-size: 4em;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 1px rgba(123, 193, 188, 0.75), 3px 3px 1px #FFFEFD; /* retro effect */
+}
+
+h1 {
+    /* Text */
+    font-size: 2.5em;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    font-family: "MuseoSlab500", arial, sans-serif;
+}
+
+#tagline-text {
+    /* Colors */
+    color: #FFB56F; /* Orange */
+
+    /* Text */
+    font-size: 1em;
+}
+
+h2 {
+    /* Colors */
+    color: #FFFEFD; /* white */
+
+    /* Text */
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    font-family: "MuseoSlab500", arial, sans-serif;
+
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5); /* letterpress effect */
+}
+
+h3 {
+    /* Colors */
+    color: #FFFEFD; /* white */
+
+    /* Text */
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 0.75em;
+    margin-bottom: 0.5em;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5); /* letterpress effect */
+    font-family: "MuseoSlab500", arial, sans-serif;
+}
+
+p {
+    line-height: 1.5em;
+}
+
+aside {
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-bottom: 1em;
+    font-style: italic;
+}
+
+.button {
+    /* Colors */
+    color: #FFFEFD; /* white */
+
+    /* Text */
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5), -1px -1px 1px rgba(255, 255, 255, 0.5); /* emboss effect */
+
+    cursor: pointer;
+}
+
+.button:active {
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5), -1px -1px 1px rgba(0, 0, 0, 0.5); /* deep letterpress effect */
+}
+
+nav a {
+    color: #FFFEFD;
+}
+
+/* SIDE NAVIGATION */
+
+a.arrow-button > button {
+    /* Box */
+    background: #F6A354;
+    border: #FFFEFD solid 6px;
+    width: 300px;
+    margin: 30px 0 0 0;
+
+    /* Text */
+    color: #FFFEFD;
+    line-height: 2em;
+    font-family: "MuseoSlab500", arial, sans-serif;
+    font-size: 1em;
+}
+
+/*** MISC ***/
+
+/** foundation overrides */
+
+a {
+    color: #FFB56F; /* Orange */
+}
+
+a:hover, a:focus {
+    color: #ff9f2f; /* Orange, highlight */
+}
+
+.button, button {
+    background-color: #568078; /* Green */
+    color: #FFFEFD;
+    border-color: #FFFEFD;
+}
+
+button:hover, button:focus, .button:hover, .button:focus {
+    background-color: #6da199; /* Green, highlight */
+}
+
+.panel {
+    background-color: transparent;
+    border-width: 3px;
+}
+
+.sub-nav dt.active a, .sub-nav dd.active a {
+    background-color: #FFB56F; /* Orange */
+}
+
+.top-bar {
+
+    /*border-bottom-color: #FFFEFD; *//* white */
+    /*border-bottom-style: solid;*/
+    /*border-bottom-width: 6px;*/
+    height: inherit;
+}
+
+.top-bar, .top-bar-section li a:not(.button), .top-bar-section .dropdown li a, .top-bar-section ul {
+    background-color: #568078; /* Green */
+
+}
+
+.top-bar-section li a:not(.button):hover, .top-bar-section ul li:hover > a {
+    background-color: #F6A354 /* Bold Orange */
+}
+
+.sub-nav dd a {
+    color: #FFFEFD;
+}
+
+.label {
+    background-color: transparent;
+    color: #FFB56F; /* Orange */
+}
+
+.label .success {
+    color: #FFB56F; /* Orange */
+}
+
+.reveal-modal {
+    background-color: #568078; /* Green */
+}
+
+.reveal-modal .close-reveal-modal {
+    color: inherit;
+}
+
+.progress .meter {
+    background-color: #F6A354 /* Bold Orange */
+}

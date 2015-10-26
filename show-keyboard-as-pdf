@@ -1,0 +1,4 @@
+#!/bin/sh
+
+setxkbmap -I $(pwd)/xkb -rules noppoo -keycodes evdev -model choc84 -symbols 'pc+inet+us+latin' -print | xkbcomp -I$(pwd)/xkb - - | xkbprint - - | ps2pdf - > choc84-evdev-us.pdf
+setxkbmap -I $(pwd)/xkb -rules noppoo -keycodes evdev -model choc84fnkeysteno -symbols 'fnkeyqwertysteno' -print | xkbcomp -I$(pwd)/xkb - - | xkbprint - - | ps2pdf - > choc84fnkeysteno-fnkeyqwertysteno.pdf

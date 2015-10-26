@@ -1,0 +1,4 @@
+?package(xkb-noppoo-choc84-and-fnkeyqwertysteno):needs="X11" section="Applications/Education"\
+  title="Steno Practice Start Page" command="/usr/bin/steno-practice-start-page"
+?package(xkb-noppoo-choc84-and-fnkeyqwertysteno):needs="X11" section="Applications/Education"\
+  title="Steno Practice Start Page with fnkeyqwertysteno keymap" command="/usr/bin/steno-practice-start-page fnkeyqwertysteno"
