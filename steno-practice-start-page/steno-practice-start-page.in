@@ -4,4 +4,4 @@ case $1 in
         setxkbmap fnkeyqwertysteno
     ;;
 esac
-sensible-browser file://DOC_HTML_DIR/nsteno-practice-start-page.html &
+sensible-browser file://DOC_HTML_DIR/steno-practice-start-page.html &
