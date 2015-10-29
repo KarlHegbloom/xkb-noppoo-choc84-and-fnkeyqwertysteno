@@ -1,3 +1,10 @@
+xkb-noppoo-choc84-and-fnkeyqwertysteno (0.2) unstable; urgency=low
+
+  * Strip comments from xkb/symbols/fnkeyqwertysteno because they cause it
+    to fail to load.
+
+ -- Karl M. Hegbloom <karl.hegbloom@gmail.com>  Thu, 29 Oct 2015 00:30:36 -0600
+
 xkb-noppoo-choc84-and-fnkeyqwertysteno (0.1) unstable; urgency=low
 
   * Initial Release.
