@@ -24,6 +24,8 @@ install: steno-practice-start-page/steno-practice-start-page
 	install  -m 644 xkb/symbols/fnkeyqwertysteno $(XKB_DIR)/symbols/fnkeyqwertysteno
 	mkdir -p -m 755 $(XKB_DIR)/rules
 	install  -m 644 xkb/rules/noppoo $(XKB_DIR)/rules/noppoo
+	mkdir -p -m 755 $(DESTDIR)$(PREFIX)/share/pixmaps
+	install  -m 644 steno-practice-start-page/plover-practice.png $(DESTDIR)$(PREFIX)/share/pixmaps
 	mkdir -p -m 755 $(DESTDIR)$(PREFIX)/bin
 	install  -m 755 steno-practice-start-page/steno-practice-start-page $(DESTDIR)$(PREFIX)/bin
 	mkdir -p -m 755 $(DESTDIR)$(PREFIX)/share/applications

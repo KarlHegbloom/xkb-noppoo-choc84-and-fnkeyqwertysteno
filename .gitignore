@@ -1,2 +1,5 @@
 debian/xkb-noppoo-choc84-and-fnkeyqwertysteno.*
 debian/xkb-noppoo-choc84-and-fnkeyqwertysteno/*
+debian/debhelper-build-stamp
+debian/files
+steno-practice-start-page/steno-practice-start-page
